@@ -5,12 +5,14 @@ import com.example.mytest.repository.MemberRepository;
 import com.example.mytest.repository.MemoryMemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
 
 //class에 커서 가져다 놓고 Ctrl+Shift+T 하면 Test 생성해줌
 //@Service
+@Transactional
 public class MemberService {
     //원본
 //    private final MemberRepository memberRepository = new MemoryMemberRepository();
